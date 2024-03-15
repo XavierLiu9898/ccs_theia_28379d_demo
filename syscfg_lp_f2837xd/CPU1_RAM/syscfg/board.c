@@ -86,7 +86,7 @@ void CPUTIMER_init(){
 void Led_Toggle_Timer_init(){
 	CPUTimer_setEmulationMode(Led_Toggle_Timer_BASE, CPUTIMER_EMULATIONMODE_STOPAFTERNEXTDECREMENT);
 	CPUTimer_setPreScaler(Led_Toggle_Timer_BASE, 0U);
-	CPUTimer_setPeriod(Led_Toggle_Timer_BASE, 100000000U);
+	CPUTimer_setPeriod(Led_Toggle_Timer_BASE, 200000000U);
 	CPUTimer_enableInterrupt(Led_Toggle_Timer_BASE);
 	CPUTimer_stopTimer(Led_Toggle_Timer_BASE);
 
